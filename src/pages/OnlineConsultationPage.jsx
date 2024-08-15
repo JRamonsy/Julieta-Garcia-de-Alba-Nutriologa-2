@@ -31,7 +31,7 @@ const OnlineConsultationPage = () => {
                 </div>
             </div>
             <div className="image-container-online">
-                <img src="public\online1.jpg" alt="" className="circular-image" />
+                <img src="\online1.jpg" alt="" className="circular-image" />
             </div>
         </div>      
     </section>

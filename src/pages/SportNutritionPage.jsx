@@ -10,9 +10,9 @@ const SportNutritionPage = () => {
                 <p className='sport-text'>En esta especialidad, se trabajan los aspectos nutricionales de cada etapa del deporte: el descanso, la fase activa y la fase de recuperación. La alimentación es clave para mantener un buen estado de salud y para optimizar el rendimiento deportivo, por lo que la nutrición se ha convertido en un verdadero "entrenamiento invisible" y su importancia es cada vez más reconocida por los deportistas.</p>
             </div>
             <div className="sport-images-content">
-                <img className='sport-image' alt=""  src="public\sport1.jpg" width="300"/>
-                <img className='sport-image' alt=""  src="public\sport3.jpg" width="300"/>
-                <img className='sport-image' alt=""  src="public/sport2.jpg" width="600"/>
+                <img className='sport-image' alt=""  src="\sport1.jpg" width="300"/>
+                <img className='sport-image' alt=""  src="\sport3.jpg" width="300"/>
+                <img className='sport-image' alt=""  src="\sport2.jpg" width="600"/>
             </div>
         </div>    
         <div className="sport-description-2">
