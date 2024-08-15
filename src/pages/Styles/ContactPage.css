@@ -1,0 +1,119 @@
+.section-contact-page {
+    width: 100%;
+    margin-top: 8vh;    
+    font-family: 'Roboto', sans-serif;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-contact-grid {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'addr form'
+                         'map map';
+                         
+                         
+    
+    grid-gap: 1vh;
+    border-radius: 1vh;
+}
+.contact-address {
+
+    padding-right: 20px;
+    grid-area: addr;
+}
+.contact-form {
+
+    grid-area: form;
+}
+
+
+.contact-info-page {
+    margin-top: 20px;
+}
+.contact-info-page div {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+.contact-info-page i {
+    width: 20px;
+    color: #8e744b;
+}
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: white;
+    color: rgb(79, 149, 29);
+    border: 2px solid rgb(79, 149, 29);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+.submit-btn:hover {
+    background-color: rgb(79, 149, 29);
+    color: white;
+}
+
+.contact-map {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-area: map;
+}
+
+.sections-1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #737373;
+    padding-bottom: 10px;
+}
+
+.content-map {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+.address {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+
+
+@media (max-width: 768px) {
+    .container-contact-grid{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'addr'
+                         'form'
+                         'map';
+    }
+    .content-map {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,87 @@
+.section-sport {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 9vh;
+    width: 100%;
+}
+
+.sport-description-1 {
+    background-color: white;
+    width: 95%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    padding-bottom: 0;
+
+}
+
+.sport-description-content{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sport-title {
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 1vh;
+}
+
+.sport-text {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sport-images-content {
+
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.sport-image {
+
+    object-fit: cover;
+   border-radius: 10px;
+}
+
+
+
+.sport-description-2 {
+    background-color: white;
+    width: 95%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    padding-bottom: 0;
+}
+
+.sport-description-content-2 {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding-bottom: 0;
+}
+
+
+p, ul {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+ul {
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .sport-description-1 {
+        flex-direction: column;
+    }
+    .sport-description-2 {
+        flex-direction: column;
+}
+}
