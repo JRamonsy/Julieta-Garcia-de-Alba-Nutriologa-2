@@ -496,10 +496,9 @@ hr {
 
 }
 
-.contact-text {
-  color: black;
+.contact-text-2, .offer-text {
+  color: #4a4848;
 }
-
 
 /*RESPONSIVE*/
 
