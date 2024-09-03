@@ -6,7 +6,7 @@ const AboutPage = () => {
       <div className="container-about-lay-out">
         <div className='bio-1'>
         <header className='container-imge-title'>
-            <img alt="" className="profile-image"  src="public\Imagen de WhatsApp 2024-08-10 a las 17.52.28_6a95484f.jpg" />
+            <img alt="" className="profile-image"  src="\Imagen de WhatsApp 2024-08-10 a las 17.52.28_6a95484f.jpg" />
             <div>
                 <h1 className='about-title'>Julieta Garcia de Alba</h1>
                 <p className="tagline">La nutrición y el deporte como camino de la constancia</p>
