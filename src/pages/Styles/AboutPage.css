@@ -144,6 +144,11 @@
         flex-direction: column;
     }
 
+    .profile-image {
+        width: 100%; /* Ajusta la imagen al 100% del ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+
     .container-imge-title {
         flex-direction: column;
     }
@@ -152,5 +157,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .bio-3-section {
+        margin-bottom: 15px;
+        width: 100%;
     }
 }

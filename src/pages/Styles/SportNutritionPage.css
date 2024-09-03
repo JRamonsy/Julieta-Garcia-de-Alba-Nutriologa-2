@@ -4,24 +4,28 @@
     width: 100%;
 }
 
-.sport-description-1 {
+.sport-description-1,
+.sport-description-2 {
     background-color: white;
     width: 95%;
-    margin: 20px;
+    margin: 20px auto; /* Asegura que el margen sea automático para centrar el contenedor */
     padding: 20px;
     border-radius: 10px;
     display: flex;
+    flex-direction: column; /* Cambiado para facilitar la adaptación en pantallas pequeñas */
     padding-bottom: 0;
-
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
 
-.sport-description-content{
+.sport-description-content,
+.sport-description-content-2 {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
 }
+
 .sport-title {
     font-weight: 300;
     font-size: 36px;
@@ -35,53 +39,36 @@
 }
 
 .sport-images-content {
-
     display: flex;
     flex-wrap: wrap;
-
-
+    justify-content: center; /* Centra las imágenes */
 }
 
 .sport-image {
-
     object-fit: cover;
-   border-radius: 10px;
-}
-
-
-
-.sport-description-2 {
-    background-color: white;
-    width: 95%;
-    margin: 20px;
-    padding: 20px;
     border-radius: 10px;
-    display: flex;
-    padding-bottom: 0;
-}
-
-.sport-description-content-2 {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding-bottom: 0;
-}
-
-
-p, ul {
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-ul {
-    padding: 20px;
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin: 10px; /* Espacio entre imágenes */
 }
 
 @media (max-width: 768px) {
-    .sport-description-1 {
-        flex-direction: column;
-    }
+    .sport-description-1,
     .sport-description-2 {
-        flex-direction: column;
-}
+        flex-direction: column; /* Ajusta la dirección del flex para pantallas pequeñas */
+    }
+
+    .sport-images-content {
+        flex-direction: column; /* Cambia la dirección de las imágenes en pantallas pequeñas */
+        align-items: center; /* Centra las imágenes */
+    }
+
+    .sport-title {
+        font-size: 24px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
+
+    .sport-text,
+    p {
+        font-size: 12px; /* Ajusta el tamaño del texto en pantallas pequeñas */
+    }
 }

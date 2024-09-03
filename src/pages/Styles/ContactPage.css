@@ -107,13 +107,34 @@ textarea {
 
 
 @media (max-width: 768px) {
-    .container-contact-grid{
+    .container-contact-grid {
         grid-template-columns: 1fr;
-        grid-template-areas: 'addr'
-                         'form'
-                         'map';
+        grid-template-areas:
+            'addr'
+            'form'
+            'map';
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
     }
+    
+    .contact-address, .contact-form, .contact-map {
+        margin: 0; /* Elimina márgenes que puedan causar desbordamiento */
+    }
+
+    .contact-form {
+        padding: 0; /* Ajusta el padding si es necesario */
+    }
+
+    .contact-map iframe {
+        width: 100%; /* Asegura que el iframe se ajuste al 100% del contenedor */
+        height: auto; /* Ajusta la altura automáticamente */
+        max-width: 100%; /* Evita el desbordamiento */
+    }
+    
     .content-map {
-        flex-direction: column;
+        flex-direction: column; /* Alinea verticalmente en pantallas pequeñas */
+    }
+    
+    .info-map {
+        padding: 0; /* Elimina padding adicional si es necesario */
     }
 }

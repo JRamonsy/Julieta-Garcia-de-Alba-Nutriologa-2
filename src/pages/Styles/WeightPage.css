@@ -74,12 +74,41 @@
 
 
 @media (max-width: 768px) {
+    .section-weight {
+        padding: 1vh; /* Ajusta el padding si es necesario */
+    }
+
     .container-weight-grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: 'img'
-                         'tit'
-                         'tit'
-                         'bs1'
-                         'bs2';
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
+        grid-template-areas: 
+            'img'
+            'tit'
+            'bs1'
+            'bs2';
+        padding: 0; /* Elimina el padding del contenedor */
+        box-sizing: border-box; /* Asegura que el padding y border no afecten el tamaño del contenedor */
+    }
+    
+    .section-weight-img {
+        height: auto; /* Ajusta la altura de la imagen para que se ajuste al contenedor */
+        padding: 0; /* Elimina el padding */
+    }
+
+    .weight-img {
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+        border-radius: 0; /* Ajusta el border-radius si es necesario */
+    }
+
+    .section-weight-intro, .section-weight-slim, .section-weight-fat {
+        padding: 1vh; /* Ajusta el padding para pantallas pequeñas */
+    }
+
+    .intro-title, .weight-sub-title {
+        font-size: 1.5em; /* Ajusta el tamaño del texto si es necesario */
+    }
+
+    .intro-info {
+        font-size: 16px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
     }
 }

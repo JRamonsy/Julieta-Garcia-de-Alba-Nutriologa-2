@@ -104,6 +104,25 @@ h1 span {
 @media (max-width: 768px) {
     .container-online {
         flex-direction: column;
-        margin: 3vh;
+        width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+        margin: 0 auto; /* Centra el contenedor */
+        padding: 0 2%; /* Ajusta el padding */
+    }
+    
+    .image-container-online {
+        flex: 0 0 auto; /* Ajusta el flex */
+        width: 100%; /* Asegura que la imagen se ajuste al ancho del contenedor */
+        padding: 0; /* Elimina el padding */
+    }
+    
+    .circular-image {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        height: auto;
+        margin: 0 auto; /* Centra la imagen */
+    }
+    
+    .online-ul {
+        width: 100%; /* Ajusta el ancho de la lista */
+        max-width: none; /* Elimina el ancho máximo fijo */
     }
 }

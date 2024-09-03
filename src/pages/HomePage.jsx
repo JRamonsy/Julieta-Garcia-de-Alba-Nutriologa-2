@@ -365,7 +365,7 @@ apoyo en este camino hacia una vida más saludable."`
                 <div className="contact-info-item">
                   <i className={contact.icon} ></i>
                   <h3>{contact.title}</h3>
-                  <p>{contact.content}</p>
+                  <p className='contact-text'>{contact.content}</p>
                 </div>
               </div>
             )
