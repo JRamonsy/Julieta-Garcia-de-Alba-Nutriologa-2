@@ -15,7 +15,7 @@ const OnlineConsultationPage = () => {
                 </p>
         
             
-                <div>
+                <div className='container-benefis'>
                     <h2>Beneficios de tu consulta en linea</h2>
                     <ul className='online-ul'>
                         <li className='onli-li'>Planes personalizados</li>
@@ -25,7 +25,7 @@ const OnlineConsultationPage = () => {
                         <li className='onli-li'>Consejos y recomendaciones personalizados</li>
                     </ul>
                     <p className='online-ul-text'>¡Inicia tu cambio ahora!</p>
-                    <button className="btn-contact">¡Contactame!</button>
+                    <a href="#/contact" className="btn-contact">¡Contactame!</a>
                     
                     
                 </div>

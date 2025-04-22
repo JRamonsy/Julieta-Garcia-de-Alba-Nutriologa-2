@@ -36,6 +36,12 @@ h1 span {
     color: #333333;
 }
 
+.container-benefis {
+
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-contact {
     background-color: rgb(79, 149, 29);
     color: #fff;
@@ -45,6 +51,8 @@ h1 span {
     font-size: 14px;
     border: none;
     cursor: pointer;
+    width: 120px;
+    
   }
 
   .btn-contact:hover {

@@ -186,6 +186,7 @@ hr {
     font-style: italic;
     text-align: center;
     font-size: 20px;
+    margin: 20px;
 }
 .icon {
     display: block;

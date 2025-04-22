@@ -1,0 +1,118 @@
+/* Contenedor general */
+.container-chronic {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    margin-top: 8vh;
+    background-color: #f4f8f4;
+}
+
+/* Caja principal del contenido */
+.chronic-content {
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    max-width: 1000px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Imagen representativa */
+.image-chronic {
+    width: 50%;
+    background-color: #e9f5e9;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.img-chronic {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.container-chronic-text {
+    width: 70%;
+    padding: 10px;
+
+}
+/* Sección de texto */
+.chronic-text {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    width: 55%;
+}
+
+/* Título de la enfermedad o sección */
+.chronic-title {
+    color: #4f9525;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Descripción o explicación */
+.chronic-description {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botones o iconos de acción */
+.chronic-actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chronic-btn {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.chronic-btn:hover {
+    background-color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .chronic-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-chronic,
+    .chronic-text {
+        width: 100%;
+    }
+
+    .img-chronic {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .chronic-btn {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .chronic-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+}

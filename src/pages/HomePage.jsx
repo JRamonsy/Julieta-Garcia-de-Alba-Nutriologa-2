@@ -7,10 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
 
-
-
-
-
   const navigate = useNavigate();
 
   const handleNavigateToAbout = () => {
@@ -48,53 +44,80 @@ const HomePage = () => {
     window.scrollTo(0, 0);
   };
 
+  const handleNavigateToChronic = () => {
+    navigate('/chronic');
+    window.scrollTo(0, 0);
+  };
+
+  const handleNavigateIntestinalGases = () => {
+    window.location.href = 'https://www.academianutricionydietetica.org/que-comer/gases-mejor-dieta-reducir-eliminar/'; 
+  };
+
+  const handleNavigateHealthySnacks = () => {
+    window.location.href = 'https://www.nutriwhitesalud.com/blog/snacks-saludables'; 
+  };
+
+  const handleNavigateTca = () => {
+    window.location.href = 'https://tca.som360.org/es/articulo/tca-larga-evolucion'; 
+  };
+
+  
+
+
+  
+
+  
+
+
+
+
   /*SOCIAL NETWORKS*/
 
-    const dataNetworks = [
-      {
-        icon:'fab fa-facebook-f',
-        url:'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
-      },
-      {
-        icon:'fab fa-twitter',
-        url:'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
-      },
-      {
-        icon:'fab fa-instagram',
-        url:'https://www.instagram.com/nutriologa.juli/reel/C5mhw5mPjL2/'
-      },
-      {
-        icon:'fab fa-linkedin-in',
-        url:'https://mx.linkedin.com/in/julieta-garcia-de-alba-v-17533aa0'
-      },
-      {
-        icon:'fab fa-youtube',
-        url:'https://www.youtube.com/watch?v=jkQaS56D5Bs'
-      }
-    ]
+  const dataNetworks = [
+    {
+      icon: 'fab fa-facebook-f',
+      url: 'https://www.facebook.com/nutrijulietagdealba'
+    },
+    // {
+    //   icon:'fab fa-twitter',
+    //   url:'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
+    // },
+    {
+      icon: 'fab fa-instagram',
+      url: 'https://www.instagram.com/nutriologa.juli/'
+    },
+    {
+      icon: 'fab fa-linkedin-in',
+      url: 'https://mx.linkedin.com/in/julieta-garcia-de-alba-v-17533aa0'
+    },
+    {
+      icon: 'fab fa-youtube',
+      url: 'https://www.youtube.com/watch?v=jkQaS56D5Bs'
+    }
+  ]
 
-  /*OFFER*/ 
+  /*OFFER*/
 
   const dataOffer = [
     {
-      icon:'icon fas fa-id-card',
-      title:'TRATO PERSONALIZADO',
-      text:'Haremos una evaluación inicial para identificar cuáles son tus objetivos y poder ofrecerte las herramientas que necesitas.'
+      icon: 'icon fas fa-id-card',
+      title: 'TRATO PERSONALIZADO',
+      text: 'Haremos una evaluación inicial para identificar cuáles son tus objetivos y poder ofrecerte las herramientas que necesitas.'
     },
     {
-      icon:'icon fas fa-bullseye',
-      title:'PLAN DE ALIMENTACIÓN PERSONALIZADO',
-      text:'Te indicaré una prescripción personalizada y diseñaré un plan exclusivamente pensando en tus necesidades y objetivos.'
+      icon: 'icon fas fa-bullseye',
+      title: 'PLAN DE ALIMENTACIÓN PERSONALIZADO',
+      text: 'Te indicaré una prescripción personalizada y diseñaré un plan exclusivamente pensando en tus necesidades y objetivos.'
     },
     {
-      icon:'icon fas fa-mortar-pestle',
-      title:'MENÚS VARIADOS',
-      text:'Diseñaré un menú teniendo en cuenta tus gustos y tu estilo de vida.'
+      icon: 'icon fas fa-mortar-pestle',
+      title: 'MENÚS VARIADOS',
+      text: 'Diseñaré un menú teniendo en cuenta tus gustos y tu estilo de vida.'
     },
     {
-      icon:'icon fas fa-forward',
-      title:'PROGRESO',
-      text:'Estaré atenta evaluando tu progreso, aclarando tus dudas y ofreciéndote nuevas recomendaciones.'
+      icon: 'icon fas fa-forward',
+      title: 'PROGRESO',
+      text: 'Estaré atenta evaluando tu progreso, aclarando tus dudas y ofreciéndote nuevas recomendaciones.'
     }
   ]
   /*SLIDER TESTIMONIES*/
@@ -108,25 +131,34 @@ const HomePage = () => {
 apoyo en este camino hacia una vida más saludable."`
     },
     {
-      name: `Abigail Gomez`,
+      name: `Eduardo Barrera`,
       img: `\IMG-20240623-WA0007.jpg`,
       review: `
-"Quiero expresar mi más sincero agradecimiento a julieta por su dedicación y 
-apoyo en este camino hacia una vida más saludable."`
+"Mis hábitos alimenticios cambiaron drásticamente y me ayudaron bastante en mi desempeño, siempre das buenos consejos y ánimas para seguir con el plan."`
     },
     {
-      name: `Abigail Gomez`,
+      name: `Abraham Gil`,
       img: `\IMG-20240623-WA0007.jpg`,
       review: `
-"Quiero expresar mi más sincero agradecimiento a julieta por su dedicación y 
-apoyo en este camino hacia una vida más saludable."`
+"Gracias a sus planes logré bajar alrededor de 10kg con sus planes de dieta y ejercicio en menos de 4 meses. La verdad muy recomendable 😉."`
     },
     {
-      name: `Abigail Gomez`,
+      name: `Belinda`,
       img: `\IMG-20240623-WA0007.jpg`,
       review: `
-"Quiero expresar mi más sincero agradecimiento a julieta por su dedicación y 
-apoyo en este camino hacia una vida más saludable."`
+"Lograste que mi vida y salud cambiaran por completo con tu ayuda, super prfesional y excelentes planes de alimentacion, SIMPLEMENTE LA MEJOR GRACIAS POR TODO!!!."`
+    },
+    {
+      name: `Graciela`,
+      img: `\IMG-20240623-WA0007.jpg`,
+      review: `
+"Agradezco infinitamente su orientación, mi vida cambió, los menus se adaptan a horarios y a la economía, pero sobre todo a lo que mas te agrade y nunca te quedascon hambre, gracias 😍👌."`
+    },
+    {
+      name: `Virginia`,
+      img: `\IMG-20240623-WA0007.jpg`,
+      review: `
+"❤️Mi proceso fue lento pero lo disfrute demasiado, mis planes siempre fueron los mas deliciosos y muy sencillos de preparar 🥰🤗👍. "`
     }
   ]
 
@@ -141,15 +173,15 @@ apoyo en este camino hacia una vida más saludable."`
     cssEase: "linear",
     responsive: [
       {
-        breakpoint: 768, 
+        breakpoint: 768,
         settings: {
-          slidesToShow: 2, 
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       }
     ]
   };
-  
+
   /*SERVICES*/
 
   const dataService = [
@@ -181,7 +213,7 @@ apoyo en este camino hacia una vida más saludable."`
     {
       img: '\enfermedades cronicas1.jpeg',
       titleService: 'Emfermedades Crónicas',
-      onClick: handleNavigateToChild
+      onClick: handleNavigateToChronic
     }
   ]
 
@@ -190,25 +222,28 @@ apoyo en este camino hacia una vida más saludable."`
   const dataBlog = [
     {
       img: "\gases.jpg",
-      date: "MAYO 27, 2024",
+      date: "Julio 13, 2022",
       title: "¿Qué no comer cuando tienes gases? Alimentos a evitar para una digestión mejor",
       description: "Los gases son parte del proceso de una digestión normal, no obstante, cuando se manifiestan de forma recurrente...",
-      button: "Continuar leyendo"
+      button: "Continuar leyendo" ,
+      onclick: handleNavigateIntestinalGases
     },
     {
       img: "\snacks.jpg",
-      date: "MAYO 27, 2024",
+      date: "Septiembre 09, 2023",
       title: "Snacks saludables: ideas y recetas para satisfacer antojos de la mejor forma nutritiva",
       description: "Siempre nos hemos enfrentado al dilema de por qué las cosas mas ricas tienen que engordar y ser malas para nuestro cuerpo...",
-      button: "Continuar leyendo"
+      button: "Continuar leyendo",
+      onclick: handleNavigateHealthySnacks
     },
     {
       img: "/tca.jpg",
-      date: "MAYO 27, 2024",
+      date: "Abril 15, 2025",
       title: "TCA (Trastorno de la conducta alimentaria): qué es y cómo buscar ayuda",
-      description: "Vivimos en la sociedad de la velocidad. Trabajamos más, comemos más y mal, cada vez tenemos menos tiempo...",
-      button: "Continuar leyendo"
-    }
+      description: "Vivimos en la sociedad de la velocidad. Trabajamos más, comemos más y mal, cada vez tenemos menos tiempo....",
+      button: "Continuar leyendo",
+      onclick: handleNavigateTca
+    },
   ]
 
   // CONTACT
@@ -222,25 +257,28 @@ apoyo en este camino hacia una vida más saludable."`
     {
       icon: 'fab fa-whatsapp',
       title: 'WhatsApp',
-      content: '4441 23 45 67 '
+      content: '4441 78 59 53 '
     },
     {
       icon: 'fas fa-map-marker-alt',
       title: 'Ubicación',
-      content: 'Av.Cuathémoc No.376 Col. Moderna CP 78233'
+      content: 'Av. Cuauhtémoc No.376 Col. Moderna CP 78233'
     },
     {
       icon: 'far fa-clock',
       title: 'Horario',
-      content: 'Lunes a Viernes de 10:30hrs a 19:30hrs'
+      content: '10-2 pm y 4 pm-8 pm'
     }
   ]
- 
+
+
+
+
   return (
     <div className='container-home' id='home'>
       <section className='section-home'>
         <h1 className='presentacion'>¡Hola, Soy Juli!</h1>
-        <h5 className='oficio'>Tu nutricionista</h5>
+        <h5 className='oficio'>Tu nutrióloga</h5>
         <div className='section-home-buttons'>
           <button className='button-conoceme' onClick={handleNavigateToAbout}>Conóceme</button>
           <button className='button-comienza' onClick={handleNavigateToContact}>Contactame</button>
@@ -250,15 +288,15 @@ apoyo en este camino hacia una vida más saludable."`
       <section className='section-social-networks'>
         <div className='container-social-networks'>
           <h1 className='sections'>¡SIGUEME EN MIS REDES SOCIALES!</h1>
-            <div className="social-icons">
-              {
-                dataNetworks.map((network, id) => (
-                  <a className="social-icon-" href={network.url} key={id}>
-                    <i className={network.icon}></i>
-                  </a>
-                ))
-              }
-            </div>
+          <div className="social-icons">
+            {
+              dataNetworks.map((network, id) => (
+                <a className="social-icon-" href={network.url} key={id}>
+                  <i className={network.icon}></i>
+                </a>
+              ))
+            }
+          </div>
         </div>
       </section>
 
@@ -277,7 +315,7 @@ apoyo en este camino hacia una vida más saludable."`
                   <p className='section-offer-text'>{offer.text}</p>
                 </div>
               ))
-            }           
+            }
           </div>
         </div>
       </section>
@@ -313,9 +351,9 @@ apoyo en este camino hacia una vida más saludable."`
           <Slider {...settings}>
             {dataSlider.map((card, id) => (
               <div className='card' key={id}>
-                <div className='card-header'>
+                {/* <div className='card-header'>
                   <img src={card.img} alt="" className='card-image' />
-                </div>
+                </div> */}
 
                 <div className='flex-column-center'>
                   <p className='card-name'>{card.name}</p>
@@ -344,7 +382,7 @@ apoyo en este camino hacia una vida más saludable."`
                     <p className='blog-date'>{blog.date}</p>
                     <h2 className='blog-title'>{blog.title}</h2>
                     <p className='blog-description' >{blog.description}</p>
-                    <button className='read-more'>{blog.button}</button>
+                    <button  onClick={blog.onclick}  className='read-more'>{blog.button}</button>
                   </div>
                 </div>
               </div>

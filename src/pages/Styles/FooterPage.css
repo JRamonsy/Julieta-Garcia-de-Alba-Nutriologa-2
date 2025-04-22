@@ -72,6 +72,22 @@
 
   .footer-derechos {
     margin: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-rs {
+    margin: 7px;
+    width: 80px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+  }
+
+  .img-rs:hover {
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0, 0.4);
+    transform: scale(1.2);
   }
 
 

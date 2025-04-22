@@ -11,16 +11,13 @@ const ContactPage = () => {
           </p>
           <div className="contact-info-page">
             <div>
-              <i className="far fa-clock"></i> Consulta [Hoario...]
+              <i className="far fa-clock"></i> Consulta: 10-2 pm y 4 pm-8 pm
             </div>
             <div>
-              <i className="fas fa-phone"></i> Teléfono Consulta [telefono...]
+              <i className="fas fa-phone"></i> Teléfono Consulta: 4441 23 45 67
             </div>
             <div>
-              <i className="fab fa-whatsapp"></i> WhatsApp [whats...]
-            </div>
-            <div>
-              <i className="far fa-envelope"></i> Email [email...]
+              <i className="fab fa-whatsapp"></i> WhatsApp: 4441 78 59 53
             </div>
             <div>
               <i className="fas fa-map-marker-alt"></i> Cómo llegar: Dirección: Av.Cuathémoc No.376 Col. Moderna CP 78233
@@ -33,20 +30,18 @@ const ContactPage = () => {
             <input type="tel" placeholder="Teléfono" />
             <input type="email" placeholder="E-mail" />
             <textarea placeholder="Comentarios"></textarea>
-            <input type="text" placeholder="¿Cómo nos has conocido?" />
             <div className="g-recaptcha" data-sitekey="your_site_key">
-              <div style={{ width: '304px', height: '78px' }}>
+              <div >
                 <textarea
                   id="g-recaptcha-response"
                   name="g-recaptcha-response"
                   className="g-recaptcha-response"
                   style={{
                     width: '250px',
-                    height: '40px',
                     border: '1px solid rgb(193, 193, 193)',
                     margin: '10px 25px',
                     padding: '0px',
-                    resize: 'none',
+
                     display: 'none',
                   }}
                 ></textarea>

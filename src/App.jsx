@@ -12,6 +12,7 @@ import OnlineConsultationPage from './pages/OnlineConsultationPage'
 import ChildNutritionPage from './pages/ChildNutritionPage'
 import DietPage from './pages/DietPage'
 import WeightPage from './pages/WeightPage'
+import ChronicDiseasesPage from './pages/ChronicDiseasesPage'
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         <Route path="/Weight" element={<WeightPage/>} />
         <Route path="/child" element={<ChildNutritionPage />} />
         <Route path="/diet" element={<DietPage />} />
+        <Route path="/chronic" element={<ChronicDiseasesPage />} />
         <Route path="*" element={<h1>404 | Esta pagina no existe</h1>} />
       </Routes>
       <Footer/>

@@ -7,7 +7,9 @@ const DietPage = () => {
                 
                 <div className="content-text">
                     <h1 className='title'>ALIMENTACIÓN VAGETARIANA</h1>
-                    <p className='text'>Como nutrióloga especializada en alimentación vegetariana, mi objetivo es ayudarte a alcanzar un equilibrio nutricional que respalde tu estilo de vida sin comprometer tu salud. .</p>
+                    <div className='div-text-intro-diet'>
+                        <p className='text-intro-diet'>Como nutrióloga especializada en alimentación vegetariana, mi objetivo es ayudarte a alcanzar un equilibrio nutricional que respalde tu estilo de vida sin comprometer tu salud. .</p>
+                    </div>
                     <div>
                         <h1 className='title'>¿Cómo puedo ayudarte en alimentación vegetariana?</h1>
                         <p className='text'>
@@ -28,9 +30,7 @@ const DietPage = () => {
                 </div>
             </div>
             <div className="container-content-diet">
-                <div className="image-diet">
-                    <img src="\vegana.jpg" alt="Niño pequeño comiendo de un tazón con una cuchara, sentado a una mesa con un plato de pan al lado" width="600"/>
-                </div>
+                
                 <div className="content-text">
                     <h1 className='title'>ALIMENTACIÓN VEGANA</h1>
                     <p className='text'>Como nutriólogo especializado en dietas veganas, mi misión es ayudarte a llevar un estilo de vida saludable y equilibrado, asegurando que tu alimentación vegana cubra todas tus necesidades nutricionales. </p>
@@ -50,6 +50,10 @@ const DietPage = () => {
 
 
                     </div>
+                </div>
+
+                <div className="image-diet">
+                    <img src="\vegana.jpg" alt="Niño pequeño comiendo de un tazón con una cuchara, sentado a una mesa con un plato de pan al lado" width="600"/>
                 </div>
             </div>
             

@@ -1,17 +1,19 @@
 import '../../pages/Styles/FooterPage.css';
 
+
+
 const dataFooter = [
     {
         icon: 'fab fa-facebook-f',
-        url: 'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
+        url: 'https://www.facebook.com/nutrijulietagdealba'
     },
-    {
-        icon: 'fab fa-twitter',
-        url: 'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
-    },
+    // {
+    //     icon: 'fab fa-twitter',
+    //     url: 'https://www.facebook.com/nutrijulietagdealba/?locale=es_LA'
+    // },
     {
         icon: 'fab fa-instagram',
-        url: 'https://www.instagram.com/nutriologa.juli/reel/C5mhw5mPjL2/'
+        url: 'https://www.instagram.com/nutriologa.juli/'
     },
     {
         icon: 'fab fa-linkedin-in',
@@ -22,6 +24,12 @@ const dataFooter = [
         url: 'https://www.youtube.com/watch?v=jkQaS56D5Bs'
     }
 ];
+
+const handleNavigateStudioRs = () => {
+    window.location.href = 'https://ramonsalas.com/'; 
+  };
+  
+
 
 const Footer = () => {
     // Obtener el año actual
@@ -39,7 +47,10 @@ const Footer = () => {
             <hr className='separator-line-footer' />
             <div className='container-footer-text'>
                 <h4 className='footer-derechos'>
-                Actialización {currentYear}
+                Actialización {currentYear} | por Studio RS
+                <img className='img-rs' 
+                onClick={handleNavigateStudioRs}
+                src="\logo RS white theme.png" alt="" />
                 </h4>
                 <h4 className='footer-derechos'>
                 ®Julieta García de Alba | Lic. en Nutrición

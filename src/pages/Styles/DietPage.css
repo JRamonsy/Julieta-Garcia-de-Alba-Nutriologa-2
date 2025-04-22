@@ -1,88 +1,112 @@
 .container-diet {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+	padding-top: 80px;
 }
 
 .container-content-diet {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centra el contenido horizontalmente */
-    margin-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	/* Centra el contenido horizontalmente */
+	margin-bottom: 20px;
 }
 
 .content-text {
-    flex: 1 1 90%; /* Ajusta el contenido de texto para ocupar hasta el 90% del ancho del contenedor */
-    max-width: 90%; /* Establece el ancho máximo al 90% del contenedor */
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
-    margin: 10px 0;
-    text-align: center; /* Centra el texto dentro del contenedor */
+	flex: 1 1 90%;
+	/* Ajusta el contenido de texto para ocupar hasta el 90% del ancho del contenedor */
+	max-width: 90%;
+	/* Establece el ancho máximo al 90% del contenedor */
+	box-sizing: border-box;
+	/* Asegura que el padding no afecte el ancho total */
+	margin: 10px 0;
+	text-align: center;
+	/* Centra el texto dentro del contenedor */
 }
 
 .title {
-    font-weight: 300;
-    font-size: 36px;
-    margin-bottom: 1vh;
-    text-align: center; /* Centra los títulos */
+	font-weight: 300;
+	font-size: 36px;
+	margin-bottom: 1vh;
+	text-align: center;
+	/* Centra los títulos */
 }
 
-.text {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #333;
-    text-align: center; /* Centra el texto */
+.div-text-intro-diet {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.text-intro-diet {
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+	line-height: 1.6;
+	color: #333;
+	text-align: center;
+	/* Centra el texto */
 }
 
 ul {
-    padding: 0 20px;
-    margin: 10px auto; /* Centra la lista */
-    list-style-type: disc;
-    color: #666;
-    text-align: left; /* Alinea el texto de la lista a la izquierda */
+	padding: 0 20px;
+	margin: 10px auto;
+	/* Centra la lista */
+	list-style-type: disc;
+	color: #666;
+	text-align: left;
+	/* Alinea el texto de la lista a la izquierda */
 }
 
 li {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .image-diet {
-    flex: 1 1 90%; /* Ajusta el contenedor de imágenes para ocupar hasta el 90% del ancho del contenedor */
-    max-width: 90%;
-    box-sizing: border-box;
-    margin: 10px 0;
-    text-align: center; /* Centra la imagen dentro del contenedor */
+	flex: 1 1 90%;
+	max-width: 40%;
+	box-sizing: border-box;
+	margin: 10px 0;
+	text-align: center;
+
+
 }
 
 .image-diet img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+	width: 100%;
+	height: auto;
+	border-radius: 200px;
 }
 
 @media (max-width: 768px) {
-    .container-diet{
-        padding-top: 8vh;
-    }
+	.container-diet {
+		padding-top: 8vh;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.text-intro-diet {
+		font-size: 20px;
+	}
 
 
-    .container-content-diet {
-        flex-direction: column;
-        align-items: center; /* Centra el contenido en pantallas pequeñas */
-    }
+	.container-content-diet {
+		flex-direction: column;
+		align-items: center;
+		/* Centra el contenido en pantallas pequeñas */
+	}
 
-    .content-text,
-    .image-diet {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
+	.content-text,
+	.image-diet {
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
 
-    .title {
-        font-size: 24px;
-    }
+	.title {
+		font-size: 24px;
+	}
 
-    .text,
-    ul {
-        font-size: 12px;
-    }
+	.text,
+	ul {
+		font-size: 12px;
+	}
 }
