@@ -1,3 +1,4 @@
+import WhatsAppButton from '../components/WhatsAppButton';
 import './Styles/ContactPage.css';
 
 const ContactPage = () => {
@@ -6,25 +7,25 @@ const ContactPage = () => {
       <div className="container-contact-grid">
         <div className="contact-address">
           <h1 className="sections-1">CONTACTAME</h1>
-          <p className='intro-info'>
-            Si quieres contactar con migo, puedes rellenar el formulario de contacto y te contestare en un plazo de 24 horas, pedir cita directamente o llamarnos por teléfono. Estare encantada de atenderte.
+          <p className='intro-info-contact'>
+            Puedes agendar cita por WhatsApp o llamarnos directamente por teléfono. Estare encantada de atenderte.
           </p>
+          <div className='div-button' >
+            <WhatsAppButton/>
+          </div>
           <div className="contact-info-page">
-            <div>
-              <i className="far fa-clock"></i> Consulta: 10-2 pm y 4 pm-8 pm
-            </div>
             <div>
               <i className="fas fa-phone"></i> Teléfono Consulta: 4441 23 45 67
             </div>
             <div>
-              <i className="fab fa-whatsapp"></i> WhatsApp: 4441 78 59 53
+              <i className="far fa-clock text-info-contact "></i> Consulta: 10-2 pm y 4 pm-8 pm
             </div>
             <div>
               <i className="fas fa-map-marker-alt"></i> Cómo llegar: Dirección: Av.Cuathémoc No.376 Col. Moderna CP 78233
             </div>
           </div>
         </div>
-        <div className="contact-form">
+        {/* <div className="contact-form">
           <form>
             <input type="text" placeholder="Nombre y Apellidos" />
             <input type="tel" placeholder="Teléfono" />
@@ -49,7 +50,7 @@ const ContactPage = () => {
             </div>
             <button type="submit" className="submit-btn">ENVIAR EMAIL</button>
           </form>
-        </div>
+        </div> */}
         <div className="contact-map">
           <h1 className="sections-1">Dónde encontrarme</h1>
           <div className="content-map">

@@ -16,7 +16,7 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: 'addr form'
+    grid-template-areas: 'addr addr'
                          'map map';
                          
                          
@@ -25,22 +25,37 @@
     border-radius: 1vh;
 }
 .contact-address {
+    padding-left: 30px;
+    padding-right: 30px;
 
-    padding-right: 20px;
+
     grid-area: addr;
 }
+
+.intro-info-contact {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;  
+}
 .contact-form {
+    background-color: #8e744b;
 
     grid-area: form;
 }
 
 
-.contact-info-page {
-    margin-top: 20px;
+.contact-info-page { 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align: center; 
 }
+
 .contact-info-page div {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 20px;
     color: #333;
 }
 .contact-info-page i {
@@ -55,7 +70,7 @@ input[type="text"], input[type="tel"], input[type="email"], textarea {
     border-radius: 4px;
 }
 textarea {
-    height: 100px;
+    height: 80px;
     resize: none;
 }
 
@@ -74,7 +89,9 @@ textarea {
 }
 
 .contact-map {
-    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
     margin: 0 auto;
     grid-area: map;
 }
@@ -93,17 +110,31 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
 .address {
     margin-top: 20px;
     font-style: italic;
 }
+
+.div-button {
+    display: flex ;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.whats-app-button {
+    width: 150px;
+    background-color: #22c55e; /* bg-green-500 */
+    color: white; /* text-white */
+    padding: 8px 16px; /* px-4 py-2 */
+    border-radius: 8px; /* rounded-lg */
+    cursor: pointer; /* cursor-pointer */
+    transition: background-color 0.3s ease; /* Suaviza el cambio de color */
+  }
+  
+  .whats-app-button:hover {
+    background-color: #16a34a; /* hover:bg-green-600 */
+  }
 
 
 
